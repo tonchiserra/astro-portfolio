@@ -1,0 +1,54 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import Head from '@components/Head.astro';
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head title={title} description={description} />
+    <ClientRouter />
+  </head>
+  <body class="bg-surface text-text min-h-screen">
+    <Navbar />
+    <main class="pt-16" transition:animate="fade">
+      <slot />
+    </main>
+    <Footer />
+
+    <script>
+      function initScrollAnimations() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('animate-fade-in');
+                entry.target.classList.remove('opacity-0');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll('[data-animate]').forEach((el) => {
+          el.classList.add('opacity-0');
+          observer.observe(el);
+        });
+      }
+
+      initScrollAnimations();
+      document.addEventListener('astro:after-swap', initScrollAnimations);
+    </script>
+  </body>
+</html>

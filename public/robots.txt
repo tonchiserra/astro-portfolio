@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gserra.netlify.app/sitemap-index.xml

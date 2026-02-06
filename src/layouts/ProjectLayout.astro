@@ -1,0 +1,75 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  client: string;
+  description: string;
+  tags: string[];
+  url?: string;
+  year: string;
+  services: string[];
+}
+
+const { title, client, description, tags, url, year, services } = Astro.props;
+---
+
+<BaseLayout title={`${title} | Gonzalo Serra`} description={description}>
+  <article class="max-w-3xl mx-auto px-6 py-16">
+    <a href="/#projects" class="inline-flex items-center gap-2 text-sm text-text-muted hover:text-accent transition-colors mb-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back to Projects
+    </a>
+
+    <header class="mb-12" transition:name={`project-${title.toLowerCase().replace(/\s+/g, '-')}`}>
+      <div class="flex items-center gap-3 mb-4">
+        <span class="font-mono text-xs text-text-muted">{year}</span>
+        <span class="text-border">|</span>
+        <span class="text-sm text-accent">{client}</span>
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">{title}</h1>
+      <p class="text-text-muted leading-relaxed max-w-2xl">{description}</p>
+
+      <div class="flex flex-wrap gap-2 mt-6">
+        {tags.map((tag) => (
+          <span class="text-xs font-mono px-3 py-1 rounded-full bg-surface-alt text-text-muted">
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      <div class="flex flex-wrap gap-8 mt-8 pt-8 border-t border-border">
+        <div>
+          <span class="text-xs text-text-muted block mb-1">Services</span>
+          <span class="text-sm">{services.join(', ')}</span>
+        </div>
+        {url && (
+          <div>
+            <span class="text-xs text-text-muted block mb-1">Live Site</span>
+            <a href={url} target="_blank" rel="noopener noreferrer" class="text-sm text-accent hover:underline inline-flex items-center gap-1">
+              Visit
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </div>
+        )}
+      </div>
+    </header>
+
+    <div class="prose prose-sm max-w-none
+      prose-headings:font-bold prose-headings:tracking-tight
+      prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+      prose-p:text-text-muted prose-p:leading-relaxed
+      prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+      prose-strong:text-text
+      prose-li:text-text-muted
+      prose-code:text-accent prose-code:bg-surface-alt prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-xs
+    ">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>

@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "name": "E-Commerce",
+      "items": ["Shopify Plus", "Liquid", "Shopify CLI", "Theme Development", "Checkout Extensibility", "Tiendanube"]
+    },
+    {
+      "name": "Frontend",
+      "items": ["TypeScript", "JavaScript", "React", "Astro", "HTML5", "CSS3", "Tailwind CSS"]
+    },
+    {
+      "name": "Backend",
+      "items": ["Node.js", "REST APIs", "GraphQL", "Shopify APIs", "Webhooks"]
+    },
+    {
+      "name": "Integrations",
+      "items": ["Klaviyo", "Nosto", "Gorgias", "Rebuy", "Yotpo", "Mercado Pago", "Google Analytics", "GTM"]
+    },
+    {
+      "name": "AI & Automation",
+      "items": ["Claude Code", "Claude API", "Cursor", "GitHub Copilot", "Prompt Engineering", "MCP"]
+    },
+    {
+      "name": "Tools",
+      "items": ["Git", "GitHub", "VS Code", "Figma", "Netlify", "npm", "Docker"]
+    }
+  ]
+}

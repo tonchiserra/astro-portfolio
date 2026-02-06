@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import Button from '@components/ui/Button.astro';
+import siteData from '@data/site.json';
+import profileImg from '@assets/images/profile.jpg';
+---
+
+<section class="min-h-[90vh] flex items-center">
+  <div class="max-w-5xl mx-auto px-6 py-32 grid md:grid-cols-[auto_1fr] gap-20 items-center">
+    <div class="hidden md:block h-full">
+      <Image
+        src={profileImg}
+        alt="Gonzalo Serra"
+        class="h-full w-auto rounded-full object-cover"
+        style="height: calc(100% + 30px);"
+        widths={[400, 600]}
+        sizes="300px"
+        loading="eager"
+      />
+    </div>
+
+    <div>
+      <p class="font-mono text-sm text-accent mb-4">Hi, my name is</p>
+
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight mb-4">
+        {siteData.name}
+      </h1>
+
+      <div class="h-10 flex items-center mb-6">
+        <span class="text-2xl sm:text-3xl md:text-4xl font-bold text-text-muted tracking-tight" id="typewriter"></span>
+        <span class="inline-block w-0.5 h-8 bg-accent animate-blink-caret ml-1"></span>
+      </div>
+
+      <p class="text-text-muted text-lg max-w-xl leading-relaxed mb-10">
+        {siteData.tagline}. <br />
+        Currently at{' '}
+        <a href={siteData.companyUrl} target="_blank" rel="noopener noreferrer" class="text-accent font-medium hover:underline">{siteData.company}</a>.
+      </p>
+
+      <div class="flex items-center gap-4">
+        <Button href="#experience">View Experience</Button>
+        <Button href="#contact" variant="ghost">Contact Me</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initTypewriter() {
+    const target = document.getElementById('typewriter');
+    if (!target) return;
+    const el: HTMLElement = target;
+
+    const phrases = ['Full Stack Developer', 'E-Commerce Specialist', 'Shopify Expert'];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const current = phrases[phraseIndex];
+
+      if (isDeleting) {
+        el.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        el.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let delay = isDeleting ? 40 : 80;
+
+      if (!isDeleting && charIndex === current.length) {
+        delay = 2000;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        delay = 500;
+      }
+
+      setTimeout(type, delay);
+    }
+
+    type();
+  }
+
+  initTypewriter();
+  document.addEventListener('astro:after-swap', initTypewriter);
+</script>

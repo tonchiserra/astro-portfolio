@@ -1,0 +1,55 @@
+---
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+const colorMap: Record<string, { bg: string; text: string }> = {
+  'Shopify Plus':           { bg: 'bg-[#95BF47]/10', text: 'text-[#6B8E23]' },
+  'Liquid':                 { bg: 'bg-[#275396]/10', text: 'text-[#275396]' },
+  'Shopify CLI':            { bg: 'bg-[#95BF47]/10', text: 'text-[#6B8E23]' },
+  'Theme Development':      { bg: 'bg-[#95BF47]/10', text: 'text-[#6B8E23]' },
+  'Checkout Extensibility': { bg: 'bg-[#95BF47]/10', text: 'text-[#6B8E23]' },
+  'Tiendanube':             { bg: 'bg-[#2f2a95]/10', text: 'text-[#2f2a95]' },
+  'TypeScript':             { bg: 'bg-[#3178C6]/10', text: 'text-[#3178C6]' },
+  'JavaScript':             { bg: 'bg-[#F7DF1E]/15', text: 'text-[#9B870C]' },
+  'React':                  { bg: 'bg-[#61DAFB]/10', text: 'text-[#0A7EA4]' },
+  'Astro':                  { bg: 'bg-[#FF5D01]/10', text: 'text-[#D84E00]' },
+  'HTML5':                  { bg: 'bg-[#E34F26]/10', text: 'text-[#C43E1A]' },
+  'CSS3':                   { bg: 'bg-[#1572B6]/10', text: 'text-[#1572B6]' },
+  'Tailwind CSS':           { bg: 'bg-[#06B6D4]/10', text: 'text-[#0891B2]' },
+  'Node.js':                { bg: 'bg-[#339933]/10', text: 'text-[#2D7D2D]' },
+  'REST APIs':              { bg: 'bg-[#275396]/10', text: 'text-[#275396]' },
+  'GraphQL':                { bg: 'bg-[#E10098]/10', text: 'text-[#C4007E]' },
+  'Shopify APIs':           { bg: 'bg-[#95BF47]/10', text: 'text-[#6B8E23]' },
+  'Webhooks':               { bg: 'bg-[#555555]/10', text: 'text-[#555555]' },
+  'Klaviyo':                { bg: 'bg-[#35AC5E]/10', text: 'text-[#2D8E4E]' },
+  'Nosto':                  { bg: 'bg-[#4A3AFF]/10', text: 'text-[#4A3AFF]' },
+  'Gorgias':                { bg: 'bg-[#FFBE00]/15', text: 'text-[#9B7500]' },
+  'Rebuy':                  { bg: 'bg-[#275396]/10', text: 'text-[#275396]' },
+  'Yotpo':                  { bg: 'bg-[#256BFB]/10', text: 'text-[#256BFB]' },
+  'Mercado Pago':           { bg: 'bg-[#00B1EA]/10', text: 'text-[#0086B3]' },
+  'Google Analytics':       { bg: 'bg-[#E37400]/10', text: 'text-[#C46300]' },
+  'GTM':                    { bg: 'bg-[#246FDB]/10', text: 'text-[#246FDB]' },
+  'Git':                    { bg: 'bg-[#F05032]/10', text: 'text-[#D04228]' },
+  'GitHub':                 { bg: 'bg-[#181717]/10', text: 'text-[#333333]' },
+  'VS Code':                { bg: 'bg-[#007ACC]/10', text: 'text-[#007ACC]' },
+  'Figma':                  { bg: 'bg-[#A259FF]/10', text: 'text-[#8B3FE0]' },
+  'Netlify':                { bg: 'bg-[#00C7B7]/10', text: 'text-[#009E91]' },
+  'npm':                    { bg: 'bg-[#CB3837]/10', text: 'text-[#CB3837]' },
+  'Docker':                 { bg: 'bg-[#2496ED]/10', text: 'text-[#2496ED]' },
+  'Claude Code':            { bg: 'bg-[#D97757]/10', text: 'text-[#C4612E]' },
+  'Claude API':             { bg: 'bg-[#D97757]/10', text: 'text-[#C4612E]' },
+  'Cursor':                 { bg: 'bg-[#000000]/10', text: 'text-[#333333]' },
+  'GitHub Copilot':         { bg: 'bg-[#181717]/10', text: 'text-[#333333]' },
+  'Prompt Engineering':     { bg: 'bg-[#8B5CF6]/10', text: 'text-[#7C3AED]' },
+  'MCP':                    { bg: 'bg-[#D97757]/10', text: 'text-[#C4612E]' },
+};
+
+const colors = colorMap[name] ?? { bg: 'bg-accent/5', text: 'text-accent' };
+---
+
+<span class:list={['inline-block px-3 py-1.5 text-xs font-medium rounded-full', colors.bg, colors.text]}>
+  {name}
+</span>

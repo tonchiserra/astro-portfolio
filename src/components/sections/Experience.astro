@@ -1,0 +1,96 @@
+---
+import { getCollection } from 'astro:content';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import TimelineItem from '@components/ui/TimelineItem.astro';
+import ProjectCard from '@components/ui/ProjectCard.astro';
+import experienceData from '@data/experience.json';
+
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+const otherProjects = allProjects
+  .filter((p) => !p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<section id="experience" class="py-24 max-w-5xl mx-auto px-6">
+  <SectionHeading title="Experience" number="01" />
+
+  <div class="max-w-2xl mb-20" data-animate>
+    {experienceData.map((job) => (
+      <TimelineItem
+        role={job.role}
+        company={job.company}
+        companyUrl={job.companyUrl}
+        period={job.period}
+        location={job.location}
+        description={job.description}
+        highlights={job.highlights}
+      />
+    ))}
+  </div>
+
+  <div>
+    <h3 class="text-lg font-bold tracking-tight mb-2">Collaborative Projects</h3>
+    <p class="text-sm text-text-muted mb-8">Brands and stores I've contributed to as part of the team.</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16" data-animate>
+      {featuredProjects.map((project) => (
+        <ProjectCard
+          slug={project.id}
+          title={project.data.title}
+          client={project.data.client}
+          description={project.data.description}
+          tags={project.data.tags}
+          url={project.data.url}
+        />
+      ))}
+    </div>
+
+    {otherProjects.length > 0 && (
+      <div>
+        <button
+          class="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent/80 transition-colors mb-8 cursor-pointer"
+          data-toggle-projects
+        >
+          <span data-toggle-text>Show more</span>
+          <span class="text-accent/60">&darr;</span>
+        </button>
+        <div class="hidden sm:grid-cols-2 lg:grid-cols-3 gap-5" data-other-projects>
+          {otherProjects.map((project) => (
+            <ProjectCard
+              slug={project.id}
+              title={project.data.title}
+              client={project.data.client}
+              description={project.data.description}
+              tags={project.data.tags}
+              url={project.data.url}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<script>
+  function initToggleProjects() {
+    const btn = document.querySelector('[data-toggle-projects]');
+    const grid = document.querySelector('[data-other-projects]');
+    const text = document.querySelector('[data-toggle-text]');
+    if (!btn || !grid) return;
+
+    btn.addEventListener('click', () => {
+      const isHidden = grid.classList.contains('hidden');
+      if (isHidden) {
+        grid.classList.remove('hidden');
+        grid.classList.add('grid');
+        btn.style.display = 'none';
+      }
+    });
+  }
+
+  initToggleProjects();
+  document.addEventListener('astro:after-swap', initToggleProjects);
+</script>

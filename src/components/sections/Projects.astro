@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import ProjectCard from '@components/ui/ProjectCard.astro';
+
+const allProjects = await getCollection('projects');
+const featuredProjects = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+const otherProjects = allProjects
+  .filter((p) => !p.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<section id="projects" class="py-24 max-w-5xl mx-auto px-6">
+  <SectionHeading title="Projects" number="04" />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-16" data-animate>
+    {featuredProjects.map((project) => (
+      <ProjectCard
+        slug={project.id}
+        title={project.data.title}
+        client={project.data.client}
+        description={project.data.description}
+        tags={project.data.tags}
+        year={project.data.year}
+        url={project.data.url}
+      />
+    ))}
+  </div>
+
+  {otherProjects.length > 0 && (
+    <div>
+      <h3 class="text-sm font-bold mb-8">Other Projects</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-animate>
+        {otherProjects.map((project) => (
+          <ProjectCard
+            slug={project.id}
+            title={project.data.title}
+            client={project.data.client}
+            description={project.data.description}
+            tags={project.data.tags}
+            year={project.data.year}
+            url={project.data.url}
+          />
+        ))}
+      </div>
+    </div>
+  )}
+</section>

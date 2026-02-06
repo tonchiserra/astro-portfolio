@@ -1,0 +1,22 @@
+---
+import SectionHeading from '@components/ui/SectionHeading.astro';
+import SkillBadge from '@components/ui/SkillBadge.astro';
+import skillsData from '@data/skills.json';
+---
+
+<section id="skills" class="py-24 max-w-5xl mx-auto px-6">
+  <SectionHeading title="Skills" number="03" />
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10" data-animate>
+    {skillsData.categories.map((category) => (
+      <div>
+        <h3 class="text-sm font-bold mb-4">{category.name}</h3>
+        <div class="flex flex-wrap gap-2">
+          {category.items.map((skill) => (
+            <SkillBadge name={skill} />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
