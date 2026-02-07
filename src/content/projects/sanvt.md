@@ -1,18 +1,18 @@
 ---
 title: "SANVT"
 client: "SANVT"
-description: "Sustainable fashion Shopify Plus store for the European essentials brand, emphasizing transparency and conscious consumption."
-tags: ["Shopify Plus", "Sustainable Fashion", "International"]
+description: "Sustainable fashion Shopify store for the European essentials brand, emphasizing transparency and conscious consumption."
+tags: ["Shopify", "Sustainable Fashion", "International"]
 url: "https://sanvt.com"
-featured: false
-order: 16
+featured: true
+order: 12
 year: "2023"
 services: ["Development"]
 ---
 
 ## Overview
 
-SANVT's commitment to sustainable fashion required an e-commerce experience communicating environmental values without compromising design. We built a clean, elegant Shopify Plus store with supply chain transparency features.
+SANVT's commitment to sustainable fashion required an e-commerce experience communicating environmental values without compromising design. We built a clean, elegant Shopify store with supply chain transparency features.
 
 ## Key Features
 

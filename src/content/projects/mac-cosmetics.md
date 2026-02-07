@@ -1,8 +1,8 @@
 ---
 title: "MAC Cosmetics Dominican Republic"
 client: "MAC Cosmetics"
-description: "Cosmetics Shopify Plus store for the Dominican Republic, bringing MAC's iconic brand experience to the Caribbean market."
-tags: ["Shopify Plus", "Cosmetics", "Caribbean Market"]
+description: "Cosmetics Shopify store for the Dominican Republic, bringing MAC's iconic brand experience to the Caribbean market."
+tags: ["Shopify", "Cosmetics", "Caribbean Market"]
 url: "https://macrepublicadominicana.com"
 featured: false
 order: 99
@@ -12,7 +12,7 @@ services: ["Development", "Integration"]
 
 ## Overview
 
-MAC Cosmetics required a robust Shopify Plus presence in the Dominican Republic maintaining globally recognized brand standards while adapting to local market needs. We delivered a high-performance storefront with shade-finder tools and localized payment options.
+MAC Cosmetics required a robust Shopify presence in the Dominican Republic maintaining globally recognized brand standards while adapting to local market needs. We delivered a high-performance storefront with shade-finder tools and localized payment options.
 
 ## Key Features
 

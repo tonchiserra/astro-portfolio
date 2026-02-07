@@ -1,8 +1,8 @@
 ---
-title: "Nestle Argentina"
+title: "Nestle"
 client: "Nestle"
-description: "Food and beverage e-commerce on Shopify Plus for Nestle Argentina, enabling direct-to-consumer sales across their extensive product portfolio."
-tags: ["Shopify Plus", "Food & Beverage", "Enterprise"]
+description: "Food and beverage e-commerce on Shopify for Nestle Argentina, enabling direct-to-consumer sales across their extensive product portfolio."
+tags: ["Shopify", "Food & Beverage", "Enterprise"]
 url: "https://shop.nestle.com.ar"
 featured: true
 order: 2
@@ -12,7 +12,7 @@ services: ["Development", "Integration"]
 
 ## Overview
 
-Nestle Argentina's move to direct-to-consumer e-commerce required a Shopify Plus platform managing a vast product catalog spanning multiple food and beverage categories with complex integration requirements.
+Nestle Argentina's move to direct-to-consumer e-commerce required a Shopify platform managing a vast product catalog spanning multiple food and beverage categories with complex integration requirements.
 
 ## Key Features
 

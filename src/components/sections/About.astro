@@ -1,34 +1,35 @@
 ---
 import SectionHeading from '@components/ui/SectionHeading.astro';
+
+const birth = new Date(2001, 5, 30); // June 30, 2001
+const today = new Date();
+let age = today.getFullYear() - birth.getFullYear();
+if (today.getMonth() < 5 || (today.getMonth() === 5 && today.getDate() < 30)) age--;
 ---
 
 <section id="about" class="py-24 max-w-5xl mx-auto px-6">
   <SectionHeading title="About" number="02" />
 
-  <div class="grid md:grid-cols-3 gap-16 items-start" data-animate>
-    <div class="md:col-span-2 space-y-4">
+  <div class="grid md:grid-cols-[1fr_auto] gap-16 items-stretch" data-animate>
+    <div class="space-y-4">
       <p class="text-text-muted leading-relaxed">
-        I'm a Full Stack Developer based in Argentina, specializing in building
-        high-performance e-commerce experiences for global brands.
+        My name is Gonzalo, but you can call me Tonchi. I'm a {age}-year-old Web Developer from Totoras, Santa Fe, Argentina, passionate about the IT world and continuous learning.
       </p>
       <p class="text-text-muted leading-relaxed">
-        At{' '}
-        <a href="https://www.innovategroup.agency/en" target="_blank" rel="noopener noreferrer" class="text-accent font-medium hover:underline">Innovate Group</a>, I work with Shopify Plus to deliver custom storefronts, complex integrations,
-        and platform migrations for brands like Cole Haan, Puma, L'Occitane, and many more.
+        In 2019, I started studying Systems Engineering at the National Technological University. However, in 2023 I realized that a traditional academic path wasn't the right fit for me, so I decided to focus on a self-taught journey, constantly improving my skills and building real-world projects.
       </p>
       <p class="text-text-muted leading-relaxed">
-        My focus is on writing clean, performant code that drives conversions and delivers
-        exceptional user experiences. From custom Liquid themes to third-party service
-        integrations, I enjoy solving complex e-commerce challenges.
+        In 2022, I discovered Shopify and quickly became fascinated by its potential. I found real motivation in seeing how businesses could grow and increase their sales thanks to the solutions my team and I developed. Since then, I've been working as a Shopify Developer, always looking for new challenges and opportunities to keep improving.
       </p>
     </div>
 
-    <div class="flex justify-center">
-      <div class="w-48 h-48 rounded-2xl bg-accent/5 border border-accent/15 overflow-hidden flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-accent/20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-        </svg>
-      </div>
+    <div class="hidden md:block">
+      <img
+        src="https://www.innovategroup.agency/cdn/shop/files/Copia_de_DSC00070.webp?v=1738699297&width=2000"
+        alt="Gonzalo Serra working at Innovate Group"
+        class="h-full max-w-[300px] aspect-3/4 object-cover object-right"
+        loading="lazy"
+      />
     </div>
   </div>
 </section>

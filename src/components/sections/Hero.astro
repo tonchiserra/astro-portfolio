@@ -5,14 +5,14 @@ import siteData from '@data/site.json';
 import profileImg from '@assets/images/profile.jpg';
 ---
 
-<section class="min-h-[90vh] flex items-center">
-  <div class="max-w-5xl mx-auto px-6 py-32 grid md:grid-cols-[auto_1fr] gap-20 items-center">
+<section class="min-h-[90vh] flex items-center relative">
+  <div class="max-w-5xl mx-auto px-6 pt-8 pb-32 grid md:grid-cols-[auto_1fr] gap-20 items-center">
     <div class="hidden md:block h-full">
       <Image
         src={profileImg}
         alt="Gonzalo Serra"
         class="h-full w-auto rounded-full object-cover"
-        style="height: calc(100% + 30px);"
+        style="height: 100%"
         widths={[400, 600]}
         sizes="300px"
         loading="eager"
@@ -41,6 +41,12 @@ import profileImg from '@assets/images/profile.jpg';
         <Button href="#experience">View Experience</Button>
         <Button href="#contact" variant="ghost">Contact Me</Button>
       </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-text-muted/30">
+    <div class="w-5 h-8 rounded-full border-2 border-current flex justify-center pt-1.5">
+      <div class="w-1 h-1.5 rounded-full bg-current animate-scroll-dot"></div>
     </div>
   </div>
 </section>

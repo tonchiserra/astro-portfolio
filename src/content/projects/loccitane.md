@@ -1,8 +1,8 @@
 ---
-title: "L'Occitane Argentina"
+title: "L'Occitane"
 client: "L'Occitane"
-description: "Beauty and skincare Shopify Plus store for the Argentine market with rich product storytelling and integrated loyalty programs."
-tags: ["Shopify Plus", "Beauty", "Integrations"]
+description: "Beauty and skincare Shopify store for the Argentine market with rich product storytelling and integrated loyalty programs."
+tags: ["Shopify", "Beauty", "Integrations"]
 url: "https://ar.loccitane.com"
 featured: false
 order: 99
@@ -12,7 +12,7 @@ services: ["Development", "Integration"]
 
 ## Overview
 
-L'Occitane Argentina needed a Shopify Plus store conveying the sensory richness of their Provencal beauty products while meeting Argentine e-commerce demands. We built a fully integrated storefront with local payment methods and a loyalty program.
+L'Occitane Argentina needed a Shopify store conveying the sensory richness of their Provencal beauty products while meeting Argentine e-commerce demands. We built a fully integrated storefront with local payment methods and a loyalty program.
 
 ## Key Features
 

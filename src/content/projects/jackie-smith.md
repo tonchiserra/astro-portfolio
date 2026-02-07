@@ -1,8 +1,8 @@
 ---
-title: "Jackie Smith Argentina"
+title: "Jackie Smith"
 client: "Jackie Smith"
-description: "Fashion accessories Shopify Plus store for Argentina's beloved handbag brand, blending bold design with intuitive shopping."
-tags: ["Shopify Plus", "Fashion", "Accessories"]
+description: "Fashion accessories Shopify store for Argentina's beloved handbag brand, blending bold design with intuitive shopping."
+tags: ["Shopify", "Fashion", "Accessories"]
 url: "https://jackiesmith.com.ar"
 featured: false
 order: 99
@@ -12,7 +12,7 @@ services: ["Development", "UI/UX"]
 
 ## Overview
 
-Jackie Smith's colorful and distinctive brand identity required an e-commerce experience equally bold and memorable. We designed and developed a Shopify Plus store showcasing their vibrant product line through editorial-style layouts.
+Jackie Smith's colorful and distinctive brand identity required an e-commerce experience equally bold and memorable. We designed and developed a Shopify store showcasing their vibrant product line through editorial-style layouts.
 
 ## Key Features
 

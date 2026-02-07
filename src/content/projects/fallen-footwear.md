@@ -1,8 +1,8 @@
 ---
-title: "Fallen Footwear Argentina"
+title: "Fallen Footwear"
 client: "Fallen Footwear"
-description: "Skate footwear brand's Argentine Shopify Plus store, built for the skateboarding community with durability storytelling."
-tags: ["Shopify Plus", "Skateboard", "Footwear"]
+description: "Skate footwear brand's Argentine Shopify store, built for the skateboarding community with durability storytelling."
+tags: ["Shopify", "Skateboard", "Footwear"]
 url: "https://fallenfootwear.com.ar"
 featured: false
 order: 18
@@ -12,7 +12,7 @@ services: ["Development"]
 
 ## Overview
 
-Fallen Footwear's Argentine store needed to speak directly to the local skateboarding community while showcasing technical durability. We built a Shopify Plus store with raw, authentic aesthetic and team-rider content integration.
+Fallen Footwear's Argentine store needed to speak directly to the local skateboarding community while showcasing technical durability. We built a Shopify store with raw, authentic aesthetic and team-rider content integration.
 
 ## Key Features
 

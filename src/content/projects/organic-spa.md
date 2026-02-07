@@ -1,8 +1,8 @@
 ---
 title: "Organic Spa"
 client: "Organic Spa"
-description: "Natural skincare and wellness Shopify Plus store, delivering a clean and calming digital experience for organic beauty products."
-tags: ["Shopify Plus", "Beauty", "Wellness"]
+description: "Natural skincare and wellness Shopify store, delivering a clean and calming digital experience for organic beauty products."
+tags: ["Shopify", "Beauty", "Wellness"]
 featured: true
 order: 8
 year: "2023"
@@ -11,7 +11,7 @@ services: ["Development"]
 
 ## Overview
 
-Organic Spa required an e-commerce platform that reflected their commitment to natural ingredients and sustainable beauty. We created a Shopify Plus store with a clean, serene design that builds trust and drives conversions.
+Organic Spa required an e-commerce platform that reflected their commitment to natural ingredients and sustainable beauty. We created a Shopify store with a clean, serene design that builds trust and drives conversions.
 
 ## Key Features
 

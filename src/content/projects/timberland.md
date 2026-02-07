@@ -1,8 +1,8 @@
 ---
 title: "Timberland"
 client: "Timberland"
-description: "Outdoor footwear and apparel Shopify Plus store for the iconic brand, delivering rugged style with a premium digital shopping experience."
-tags: ["Shopify Plus", "Footwear", "Outdoor"]
+description: "Outdoor footwear and apparel Shopify store for the iconic brand, delivering rugged style with a premium digital shopping experience."
+tags: ["Shopify", "Footwear", "Outdoor"]
 featured: true
 order: 7
 year: "2024"
@@ -11,7 +11,7 @@ services: ["Development"]
 
 ## Overview
 
-Timberland's digital presence needed to reflect their heritage of quality outdoor footwear while meeting modern e-commerce expectations. We developed a Shopify Plus storefront built for performance, scalability, and brand storytelling.
+Timberland's digital presence needed to reflect their heritage of quality outdoor footwear while meeting modern e-commerce expectations. We developed a Shopify storefront built for performance, scalability, and brand storytelling.
 
 ## Key Features
 

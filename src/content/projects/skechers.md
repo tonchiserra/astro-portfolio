@@ -1,8 +1,8 @@
 ---
 title: "Skechers"
 client: "Skechers"
-description: "Performance footwear Shopify Plus store for the global comfort technology brand, delivering feature-rich shopping at enterprise scale."
-tags: ["Shopify Plus", "Footwear", "Performance"]
+description: "Performance footwear Shopify store for the global comfort technology brand, delivering feature-rich shopping at enterprise scale."
+tags: ["Shopify", "Footwear", "Performance"]
 featured: true
 order: 5
 year: "2024"
@@ -11,7 +11,7 @@ services: ["Development"]
 
 ## Overview
 
-Skechers required a Shopify Plus storefront handling their extensive product catalog spanning performance, lifestyle, and kids' footwear. We built a robust, high-performance store with advanced search and technology-focused product storytelling.
+Skechers required a Shopify storefront handling their extensive product catalog spanning performance, lifestyle, and kids' footwear. We built a robust, high-performance store with advanced search and technology-focused product storytelling.
 
 ## Key Features
 

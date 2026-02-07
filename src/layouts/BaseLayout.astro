@@ -18,6 +18,20 @@ const { title, description } = Astro.props;
   <head>
     <Head title={title} description={description} />
     <ClientRouter />
+    <script is:inline>
+      (function() {
+        function applyTheme() {
+          const theme = localStorage.getItem('theme');
+          if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+        applyTheme();
+        document.addEventListener('astro:after-swap', applyTheme);
+      })();
+    </script>
   </head>
   <body class="bg-surface text-text min-h-screen">
     <Navbar />

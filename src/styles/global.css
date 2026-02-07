@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
   font-family: 'Raleway';
   src: url('/fonts/Raleway-Regular.woff2') format('woff2');
@@ -37,7 +39,7 @@
   --color-surface-alt: #f0f0f0;
   --color-text: #111111;
   --color-text-muted: #666666;
-  --color-accent: #275396;
+  --color-accent: #14520f;
   --color-border: #e5e5e5;
 
   --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
@@ -45,6 +47,7 @@
 
   --animate-fade-in: fade-in 0.5s ease-out forwards;
   --animate-blink-caret: blink-caret 0.8s step-end infinite;
+  --animate-scroll-dot: scroll-dot 1.5s ease-in-out infinite;
 
   @keyframes fade-in {
     from { opacity: 0; transform: translateY(12px); }
@@ -54,6 +57,12 @@
   @keyframes blink-caret {
     from, to { opacity: 0; }
     50% { opacity: 1; }
+  }
+
+  @keyframes scroll-dot {
+    0% { opacity: 1; transform: translateY(0); }
+    70% { opacity: 0; transform: translateY(8px); }
+    100% { opacity: 0; transform: translateY(8px); }
   }
 }
 
@@ -67,9 +76,24 @@ body {
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ::selection {
   background: var(--color-accent);
   color: white;
+}
+
+.dark ::selection,
+.dark::selection {
+  color: #0f0f0f;
+}
+
+.dark {
+  --color-surface: #0f0f0f;
+  --color-surface-alt: #1a1a1a;
+  --color-text: #e5e5e5;
+  --color-text-muted: #999999;
+  --color-accent: #aec9ac;
+  --color-border: #2a2a2a;
 }

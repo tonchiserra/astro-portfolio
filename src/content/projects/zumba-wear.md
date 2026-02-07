@@ -1,8 +1,8 @@
 ---
 title: "Zumba Wear"
 client: "Zumba Wear"
-description: "Fitness activewear Shopify Plus store for the global Zumba brand, delivering an energetic shopping experience to their international fitness community."
-tags: ["Shopify Plus", "Activewear", "International"]
+description: "Fitness activewear Shopify store for the global Zumba brand, delivering an energetic shopping experience to their international fitness community."
+tags: ["Shopify", "Activewear", "International"]
 url: "https://www.zumbawear.com"
 featured: true
 order: 1
@@ -12,7 +12,7 @@ services: ["Development"]
 
 ## Overview
 
-Zumba Wear's global store needed to match the energy of the Zumba fitness movement. We developed a Shopify Plus storefront with dynamic visuals, international shipping logic, and a community-driven shopping experience.
+Zumba Wear's global store needed to match the energy of the Zumba fitness movement. We developed a Shopify storefront with dynamic visuals, international shipping logic, and a community-driven shopping experience.
 
 ## Key Features
 

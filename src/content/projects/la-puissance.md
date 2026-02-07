@@ -1,8 +1,8 @@
 ---
 title: "La Puissance"
 client: "La Puissance"
-description: "Beauty and haircare Shopify Plus store for Argentina's professional haircare brand, featuring product education and salon-quality shopping."
-tags: ["Shopify Plus", "Beauty", "Haircare"]
+description: "Beauty and haircare Shopify store for Argentina's professional haircare brand, featuring product education and salon-quality shopping."
+tags: ["Shopify", "Beauty", "Haircare"]
 url: "https://lapuissance.com.ar"
 featured: false
 order: 12
@@ -12,7 +12,7 @@ services: ["Development"]
 
 ## Overview
 
-La Puissance needed an e-commerce presence communicating professional quality of their haircare products while educating consumers on proper usage and routines. We developed a Shopify Plus store with rich content and routine-builder functionality.
+La Puissance needed an e-commerce presence communicating professional quality of their haircare products while educating consumers on proper usage and routines. We developed a Shopify store with rich content and routine-builder functionality.
 
 ## Key Features
 

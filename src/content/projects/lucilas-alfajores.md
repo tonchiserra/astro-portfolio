@@ -1,8 +1,8 @@
 ---
 title: "Lucila's Alfajores"
 client: "Lucila's Alfajores"
-description: "Argentine gourmet pastry Shopify Plus store, bringing traditional alfajores to a global audience with artisanal storytelling."
-tags: ["Shopify Plus", "Food", "Gourmet"]
+description: "Argentine gourmet pastry Shopify store, bringing traditional alfajores to a global audience with artisanal storytelling."
+tags: ["Shopify", "Food", "Gourmet"]
 url: "https://lucilas.com"
 featured: false
 order: 19
@@ -12,7 +12,7 @@ services: ["Development", "Integration"]
 
 ## Overview
 
-Lucila's Alfajores needed an e-commerce platform conveying artisanal quality while enabling domestic and international gift orders. We developed a Shopify Plus store with gift-box customization and cold-chain logistics integrations.
+Lucila's Alfajores needed an e-commerce platform conveying artisanal quality while enabling domestic and international gift orders. We developed a Shopify store with gift-box customization and cold-chain logistics integrations.
 
 ## Key Features
 

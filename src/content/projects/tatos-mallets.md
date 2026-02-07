@@ -1,8 +1,8 @@
 ---
 title: "Tato's Mallets"
 client: "Tato's Mallets"
-description: "Equestrian polo mallet Shopify Plus store, serving the global polo community with handcrafted sporting equipment."
-tags: ["Shopify Plus", "Equestrian", "Niche"]
+description: "Equestrian polo mallet Shopify store, serving the global polo community with handcrafted sporting equipment."
+tags: ["Shopify", "Equestrian", "Niche"]
 url: "https://www.tatosmallets.com"
 featured: false
 order: 20
@@ -12,7 +12,7 @@ services: ["Development"]
 
 ## Overview
 
-Tato's Mallets serves a specialized global market of polo players demanding precision-crafted equipment. We built a Shopify Plus store communicating craftsmanship while providing international shipping and custom ordering capabilities.
+Tato's Mallets serves a specialized global market of polo players demanding precision-crafted equipment. We built a Shopify store communicating craftsmanship while providing international shipping and custom ordering capabilities.
 
 ## Key Features
 

@@ -1,8 +1,8 @@
 ---
-title: "Rusty Argentina"
+title: "Rusty"
 client: "Rusty"
-description: "Surf and lifestyle brand's Argentine Shopify Plus store, delivering authentic surf culture through a visually immersive shopping experience."
-tags: ["Shopify Plus", "Surf", "Lifestyle"]
+description: "Surf and lifestyle brand's Argentine Shopify store, delivering authentic surf culture through a visually immersive shopping experience."
+tags: ["Shopify", "Surf", "Lifestyle"]
 url: "https://rusty.com.ar"
 featured: true
 order: 4
@@ -12,7 +12,7 @@ services: ["Development"]
 
 ## Overview
 
-Rusty Argentina needed a Shopify Plus store authentically representing their surf heritage with a modern, frictionless shopping experience. We developed a visually driven storefront with lifestyle content integration and seasonal collection showcases.
+Rusty Argentina needed a Shopify store authentically representing their surf heritage with a modern, frictionless shopping experience. We developed a visually driven storefront with lifestyle content integration and seasonal collection showcases.
 
 ## Key Features
 

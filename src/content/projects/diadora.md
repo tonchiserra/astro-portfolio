@@ -1,8 +1,8 @@
 ---
 title: "Diadora"
 client: "Diadora"
-description: "Italian sportswear heritage brand's Shopify Plus store, blending athletic performance with classic Italian design in a modern e-commerce experience."
-tags: ["Shopify Plus", "Sportswear", "Heritage"]
+description: "Italian sportswear heritage brand's Shopify store, blending athletic performance with classic Italian design in a modern e-commerce experience."
+tags: ["Shopify", "Sportswear", "Heritage"]
 featured: true
 order: 9
 year: "2024"
@@ -11,7 +11,7 @@ services: ["Development"]
 
 ## Overview
 
-Diadora's rich Italian sporting heritage demanded a digital storefront that honored their legacy while delivering a cutting-edge shopping experience. We built a Shopify Plus store that balances brand storytelling with high-performance e-commerce.
+Diadora's rich Italian sporting heritage demanded a digital storefront that honored their legacy while delivering a cutting-edge shopping experience. We built a Shopify store that balances brand storytelling with high-performance e-commerce.
 
 ## Key Features
 

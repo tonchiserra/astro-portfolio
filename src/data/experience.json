@@ -4,14 +4,15 @@
     "companyUrl": "https://www.innovategroup.agency/en",
     "role": "Full Stack Developer",
     "period": "2022 - Present",
-    "location": "Argentina",
+    "location": "Remote",
     "description": "Building and maintaining Shopify Plus storefronts for global brands. Leading custom theme development, third-party integrations, and performance optimization across multiple high-traffic e-commerce projects.",
     "highlights": [
-      "Delivered 20+ Shopify Plus stores for brands like Cole Haan, Puma, L'Occitane, and MAC Cosmetics",
-      "Integrated third-party services including Klaviyo, Nosto, Gorgias, Rebuy, and Yotpo",
-      "Implemented custom Liquid themes with focus on conversion rate optimization",
-      "Built seamless payment integrations with Mercado Pago for Latin American markets",
-      "Executed platform migrations from WooCommerce, Magento, and Prestashop to Shopify Plus"
+      "Delivered hundreds of Shopify Plus stores for brands like Zumba Wear, Nestlé, and Hey Dude",
+      "Integrated third-party services including Klaviyo, Andreani, and Mercado Pago",
+      "Implemented custom Liquid themes with focus on performance and user experience",
+      "Customized Shopify checkout to improve conversion rates and customer experience",
+      "App development and maintenance to extend Shopify functionality and meet specific client needs",
+      "Worked with top-level technologies including Remix, React, Node.js, GraphQL, Vue.js, and Typescript"
     ]
   }
 ]
